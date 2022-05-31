@@ -1,0 +1,15 @@
+Node* reverseDLL(Node * head)
+{
+    //Your code here
+    if(head==NULL||head->next==NULL)return head;
+    Node* p=NULL,*c=head,*n=head->next;
+     while(c!=NULL){
+         c->next=p;
+         c->prev=n;
+         p=c;
+         
+         c=n;
+        if(n!=NULL) n=n->next;
+     }
+     return p;
+}
