@@ -1,3 +1,6 @@
+//algo: compare both ele if not equal make node=node->next for smaller compare again if equal print and increase both 
+
+
 Node* findIntersection(Node* head1, Node* head2)
 {
     // Your Code Here
