@@ -1,0 +1,31 @@
+   void solve(node*s,node* e){
+        node* dummy=new node(-1);
+        node*p=dummy,*c=s,*n=s->next;
+        while(p!=e){
+            c->next=p;
+            p=c;
+            c=n;
+            if(n!=NULL)n=n->next;
+            
+        }
+        //return e;
+    }
+    struct node *reverse (struct node *head, int k)
+    { 
+        // Complete this method
+        //recursive solution
+        if(head==NULL||head->next==NULL)return head;
+        node* s=head,* e=head;
+        int id=k-1;
+        while(id--){
+            if(e->next==NULL)break;
+            e=e->next;
+            
+        }
+        node* temp=reverse(e->next,k);
+        
+        solve(s,e);
+        s->next=temp;
+        return e;
+        
+    }
