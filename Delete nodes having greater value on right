@@ -1,0 +1,30 @@
+   Node * reverse(Node* head){
+        Node* p=NULL,*c=head,* n=head->next;
+        while(c!=NULL){
+            c->next=p;
+            p=c;
+            c=n;
+            if(n!=NULL)n=n->next;
+        }
+        return p;
+    }
+    Node *compute(Node *head)
+    {
+        // your code goes here
+       head=  reverse(head);
+        Node* left=head;
+        Node* right=head->next;
+        while(right!=NULL){
+            if(left->data>right->data){
+                left->next=right->next;
+                delete right;
+                right=left->next;
+            }
+            else {
+                left=left->next;
+                right=right->next;
+            }
+        }
+        head=reverse(head);
+        return head;
+    }
