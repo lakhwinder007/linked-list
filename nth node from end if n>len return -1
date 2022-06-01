@@ -1,0 +1,31 @@
+int getlen(Node*head){
+    if(head==NULL)return 0;
+    int len=0;
+    Node* temp=head;
+    
+    while(temp!=NULL){
+        len++;
+        temp=temp->next;
+    }
+    return len;
+    
+}
+int getNthFromLast(Node *head, int n)
+{
+       int len=getlen(head);
+      // cout<<len<<endl;
+       if(len-n<0)return -1;
+       if(head==NULL)return -1;
+
+       Node* temp=head;
+       
+       int i=0;
+       while(temp!=NULL){
+           i++;
+           if(i==len-n+1){
+               return temp->data;
+           }
+           
+           temp=temp->next;
+       }   
+}
