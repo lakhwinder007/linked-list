@@ -10,3 +10,5 @@ https://practice.geeksforgeeks.org/problems/add-two-numbers-represented-by-linke
 **is palindrone **  https://practice.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1#
 
 https://practice.geeksforgeeks.org/problems/merge-k-sorted-linked-lists/1
+
+https://practice.geeksforgeeks.org/problems/delete-nodes-having-greater-value-on-right/1
