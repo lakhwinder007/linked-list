@@ -12,3 +12,5 @@ https://practice.geeksforgeeks.org/problems/add-two-numbers-represented-by-linke
 https://practice.geeksforgeeks.org/problems/merge-k-sorted-linked-lists/1
 
 https://practice.geeksforgeeks.org/problems/delete-nodes-having-greater-value-on-right/1
+
+https://practice.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1#
