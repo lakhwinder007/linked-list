@@ -1,0 +1,18 @@
+ Node *copyList(Node *head)
+    {
+        //Write your code here
+        Node*temp=head;
+        map<Node*,Node*>m;
+        while(temp){
+            Node*copy=new Node(temp->data);
+            m[temp]=copy;
+            temp=temp->next;
+        }
+        temp=head;
+        while(temp){
+            m[temp]->next=m[temp->next];
+            m[temp]->arb=m[temp->arb];
+            temp=temp->next;
+        }
+        return m[head];
+    }
