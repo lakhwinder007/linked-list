@@ -1,0 +1,48 @@
+void rev(node*s,node*e){
+        node* dummy=new node(-1);
+        dummy->next=s;
+        node* p=dummy,*c=s,*n=s->next;
+        while(p!=e){
+         c->next=p;
+         p=c;
+         c=n;
+         if(n)n=n->next;
+        }
+        s->next=NULL;
+    }
+    struct node *reverse (struct node *head, int k)
+    { 
+        
+        node* dummy=new node(-1);
+        node* bs=dummy;
+        dummy->next=head;
+        node* e=head;
+        int i=0;
+        node*r=head;
+        while(e){
+            i++;
+            if(i%k==0){
+                node*s=bs->next,*temp=e->next;
+                rev(s,e);
+                bs->next=e;
+                s->next=temp;
+                e=temp;
+                bs=s;
+                
+            }
+            else {
+                 if(e->next==NULL)r=e;
+                e=e->next;
+                
+            }
+            
+        }
+        
+        if(i%k){
+            node*s=bs->next;
+                rev(s,r);
+                bs->next=r;
+             
+        }
+        return dummy->next;
+    }
