@@ -16,3 +16,5 @@ https://practice.geeksforgeeks.org/problems/delete-nodes-having-greater-value-on
 https://practice.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1#
 
 https://practice.geeksforgeeks.org/problems/segregate-even-and-odd-nodes-in-a-linked-list5035/1
+
+https://practice.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1#
