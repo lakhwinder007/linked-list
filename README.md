@@ -18,3 +18,5 @@ https://practice.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-ra
 https://practice.geeksforgeeks.org/problems/segregate-even-and-odd-nodes-in-a-linked-list5035/1
 
 https://practice.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1#
+
+https://practice.geeksforgeeks.org/problems/rotate-a-linked-list/0/#
