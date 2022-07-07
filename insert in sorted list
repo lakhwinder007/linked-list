@@ -1,0 +1,40 @@
+ Node *sortedInsert(Node* head, int data)
+    {
+       int smallerpresent=0,greaterpresent=0;
+       Node* temp=head;
+       while(temp){
+         if(temp->data>data)greaterpresent=1;
+         if(temp->data<data)smallerpresent=1;
+         if(temp->next==head)break;
+         temp=temp->next;
+       }
+       
+       if(greaterpresent&&smallerpresent){
+           
+           Node* temp=head;
+           while(temp->next!=head){
+               if(temp->next->data>data)break;
+               temp=temp->next;
+           }
+           Node*n=temp->next;
+           temp->next=new Node(data);
+           temp=temp->next;
+           temp->next=n;
+         
+       }
+       else {
+           Node* tail=head;
+           while(tail){
+               if(tail->next==head)break;
+               tail=tail->next;
+           }
+           tail->next=new Node(data);
+           tail=tail->next;
+           tail->next=head;
+           if(smallerpresent==0)return tail;
+       }
+       
+       
+       
+       return head;
+    }
