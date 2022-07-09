@@ -1,0 +1,14 @@
+ void deleteNode(Node *del)
+    {
+       // Your code here
+       Node* temp=del->next;
+       Node* cur=del;
+       while(temp->next){
+           cur->data=temp->data;
+           cur=cur->next;
+           temp=temp->next;
+       }
+       cur->data=temp->data;
+       cur->next=NULL;
+       delete(temp);
+    }
