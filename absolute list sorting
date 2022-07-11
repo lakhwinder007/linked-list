@@ -1,0 +1,18 @@
+void sortList(Node** head)
+    {
+        // Your Code Here
+        if(*head==NULL)return ;
+        Node*cur=*head;
+        while(cur&&cur->next){
+            Node* temp=cur->next;
+            if(cur->next->data<0){
+                cur->next=cur->next->next;
+                temp->next=*head;
+                *head=temp;
+            }
+            else cur=cur->next;
+            
+        }
+        
+        
+    }
